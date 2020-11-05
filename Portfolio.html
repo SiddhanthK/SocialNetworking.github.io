@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+      footer {
+  text-align: center;
+  padding: 3px;
+  background-color:black;
+  color: white;
+}
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color:blue;
+  padding: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  color:black;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Account</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="networing.html">HomePage</a></li>
+        <li><a href="#">Subscription</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Welcome</h3>
+  <img src="data:image/png;base64,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" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>  <div style="width: 50%;margin-left: 450px" class="alert alert-warning alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Dear Customer</strong> Your Free trial will be ending on 2nd of November!
+  </div></h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">Set the location to your country to enjoy more filtered content</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+   <form autocomplete="off" action="/action_page.php">
+  <div class="autocomplete" style="width:300px;">
+    <input id="myInput" type="text" name="myCountry" placeholder="Country">
+  </div>
+  <input type="submit">
+</form>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Recent Reads</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+   
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+    </div>
+  </div>
+</div>
+
+ <script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+
+      <footer>
+  <p>Official Website <br>
+    <b style="font-style: italic">Sharehub</b><br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+</body>
+</html>

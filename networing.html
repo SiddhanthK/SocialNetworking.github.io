@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Networking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/ss.css">
+      <style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+  }
+          
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+  </style>
+    </head>
+    <body>
+    
+    <div class="jumbotron text-center">
+  <h1>ShareHub</h1>
+  <p>Share ,Read and Collab</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>AboutUs</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>How can we help</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>How to register</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="#">ShareHub</a></li>
+    <li><a href="#discover">Discover</a></li>
+    <li><a href="#register">Registration</a></li>
+    <li><a href="#stories">Aritcles</a></li>
+       <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">
+  <button style="border: none;" type="button" class="btn btn-success btn-basic" data-toggle="modal" data-target="#myModal1">LogIn</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">LogIn</h4>
+        </div>
+        <div class="modal-body">
+       <div class="container">
+
+  <form style="width:40%" action="/action_page.php">
+    <div class="form-group">
+      <label for="email">LoginId</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  Or<br>
+  <p> Login With Facebook   <a href="Portfolio.html" class="btn btn-info" role="button">Facebook</a></p>
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div></a></li>
+    </ul>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="height:4000px">
+    <h1 id="discover" style="color:forestgreen"> Discover, Explore, Share New Content EveryDay</h1>
+    <div class="container">
+<p id="para"> Explore our wide range of Content</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/851213/pexels-photo-851213.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Lights" style="width:100%">
+          <div class="caption">
+              <p id="para">  <a href="#" data-toggle="tooltip" title="5Million+ Active Users, Join now!">Want to read blogs? We got everything you'll ever need to read new stuffS</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Nature" style="width:100%">
+          <div class="caption">
+              <p id="para"><a href="#" data-toggle="tooltip" title="255k+ Active Users, Join now!">Want to be a blog writer? start with us under out guidance</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+      
+   
+    </div>
+      <div class="row">
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="https://images.pexels.com/photos/747510/pexels-photo-747510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Lights" style="width:100%">
+             <img src="https://images.pexels.com/photos/1226721/pexels-photo-1226721.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Nature" style="width:100%">
+          <div class="caption">
+              <p id="para"><a href="#" data-toggle="tooltip" title="5Million+ Active Users, Join now!">Want pics for your project? we got your back</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/5077039/pexels-photo-5077039.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Nature" style="width:100%">
+          <div class="caption">
+              <p id="para"><a href="#" data-toggle="tooltip" title="5Million+ Active Users, Join now!">Look for new digital content</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+      
+   
+    </div>
+        <h1 id="register" style="color:greenyellow;margin-top: 40px"> Register Now To Get 1 month Free Subscription!</h1>
+              <div class="row">
+    <div class="col-md-6">
+      <div style="border: none" class="thumbnail">
+          <div class="container">    
+
+<div class="card bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center">Create Account</h4>
+	<p class="text-center">Get started with your free account</p>
+	<p>
+		<a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+		<a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+	</p>
+	<p class="divider-text">
+        <span class="bg-light">OR</span>
+    </p>
+	<form>
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Full name" type="text">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Email address" type="email">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+		</div>
+		<select class="custom-select" style="max-width: 120px;">
+		    <option selected="">+971</option>
+		    <option value="1">+972</option>
+		    <option value="2">+198</option>
+		    <option value="3">+701</option>
+		</select>
+    	<input name="" class="form-control" placeholder="Phone number" type="text">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+		</div>
+		<select class="form-control">
+			<option selected="Specify Needs"></option>
+			<option>Designer</option>
+			<option>Manager</option>
+			<option>Accaunting</option>
+		</select>
+	</div> <!-- form-group end.// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Create password" type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Repeat password" type="password">
+    </div> <!-- form-group// -->                                      
+    <div class="form-group">
+        
+<div class="container">
+ 
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">pay to complete registration</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Online Payment</h4>
+        </div>
+        <div class="modal-body">
+        <div class="container">
+            <div style="width:40%" class="alert alert-danger">
+  <strong>Danger!</strong>Note: If payment not updated please mail the transaction Id.
+</div>
+
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Pay Via UPI</button>
+  <div id="demo" class="collapse">
+  <div class="btn-group">
+  <button type="button" class="btn btn-primary"><i class="fab fa-google-pay"></i>GooglePay</button>
+  <button type="button" class="btn btn-primary">BhimApp</button>
+  <button type="button" class="btn btn-primary">Paytm</button>
+</div>
+  
+  </div>
+</div>
+        
+          <div class="container">
+    <div style="border: none" class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                    <div class="checkbox pull-right">
+                        <label>
+                            <input type="checkbox" />
+                            Remember
+                        </label>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                    <div class="form-group">
+                        <label for="cardNumber">
+                            CARD NUMBER</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                required autofocus />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="expityMonth">
+                                    EXPIRY DATE</label>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                </div>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CV CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                </li>
+            </ul>
+            <br/>
+            <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay To complete the Registration</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+        
+    </div> <!-- form-group// -->      
+                                                                  
+</form>
+</article>
+</div> <!-- card.// -->
+
+</div> 
+    
+          <div class="caption">
+              
+        
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div style="border: none" class="thumbnail">
+        <a href="" alt="Nature" style="width:100%">
+            <img style="height: 540px;margin-top: 40px" src="https://images.pexels.com/photos/5177790/pexels-photo-5177790.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+          <div class="caption">
+              <p id="para"><a href="#" data-toggle="tooltip" title="5Million+ Active Users, Join now!">Look for new digital content</a></p>
+          </div>
+        </a>
+      </div>
+    </div>
+      
+   
+    </div>
+    <h1 id="stories" style="color: green">How Creating A profile on ShareHb will get more things done</h1>
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Look out for better design</h3>
+          <p>Good designs are always so much fun!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>More access to the  other people will get you more idea s and inspiration too!</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>It will help you meet more people like yourself</h3>
+          <p>And there's nothing better than collaboration</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    <div style="margin-left:35px"  class="container">
+
+  <div class="row">
+    <div  class="col-md-4">
+      <div style="border:none" class="thumbnail">
+      <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.pexels.com/photos/935756/pexels-photo-935756.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Amenities</h1> 
+        
+      <p>orem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it t</p> 
+      <p><button type="button" class="btn btn-default">  <a href="p2.html" data-toggle="tooltip" title="Learn more about Our projects">Explore</a></button></p>
+    </div>
+  </div>
+</div>
+     
+        
+          <div class="caption">
+            <p style="font-style: italic" ><dt>Start Bloggin with us and share it!</dt></p>
+          </div>
+        
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border:none" class="thumbnail">
+        
+          <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Under Construction </h1> 
+      <p>orem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it </p> 
+      <p><button type="button" class="btn btn-default">click to learn more</button></p>
+    </div>
+  </div>
+</div>
+
+          <div class="caption">
+            <p style="font-style: italic"><dt>Collab with other writers</dt></p>
+          </div>
+       
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border:none" class="thumbnail">
+        
+          <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="hhttps://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Under Construction </h1> 
+      <p>orem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it </p> 
+      <p><button type="button" class="btn btn-default">click to learn more</button></p>
+    </div>
+  </div>
+</div>
+
+          <div class="caption">
+            <p style="font-style: italic"><dt> A lot can happen with a Profile </dt></p>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+    <h1 style="color: darkseagreen">Want To read Stories , Blogs and Exciting Articles?</h1>
+    <h3 style="color: cadetblue">With 20Million+ Readable Stuff , you'll Never Run out Content to read </h3>
+    <h1 style="color: lightblue"> 210k+ Writers On the Platform </h1>
+    <h3 style="color:aquamarine"> Select Your Genre</h3>
+    <div class="container">
+
+  <div class="row">
+    <div class="col-md-4">
+      <div style="border:none" class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/3620411/pexels-photo-3620411.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Lights" style="width:100%">
+          <div class="caption">
+                   <h3><a href="#" data-toggle="tooltip" title="800k+ Articles Available"><dt>Fashion</dt></a></h3>
+     
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border: none" class="thumbnail">
+        <a href=seond%20page.html>
+                 <img src="https://images.pexels.com/photos/1839564/pexels-photo-1839564.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Lights" style="width:100%">
+          <div class="caption">
+                       <h3><a href="#" data-toggle="tooltip" title="Spine chilling short to long stories available form you"><dt>Horror</dt></a></h3>
+         
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border: none" class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Lights" style="width:100%">
+          <div class="caption">
+              <h3><a href="#" data-toggle="tooltip" title="travel stories from around the globe to entertain you"><dt>Travelling</dt></a></h3>
+              
+         
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div><div class="container">
+
+  <div class="row">
+    <div class="col-md-4">
+      <div style="border:none" class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/1151243/pexels-photo-1151243.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Lights" style="width:100%">
+          <div class="caption">
+                   <h3><a href="#" data-toggle="tooltip" title="Get up to date with the world of science and technology"><dt>Scientific Articles</dt></a></h3>
+   
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border: none" class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/4489735/pexels-photo-4489735.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Nature" style="width:100%">
+          <div class="caption">
+                       <h3><a href="#" data-toggle="tooltip" title="Read lots of articles on world politics from our creative writers"><dt>Politics</dt></a></h3>
+  
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="border: none" class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="https://images.pexels.com/photos/5359800/pexels-photo-5359800.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Fjords" style="width:100%">
+          <div class="caption">
+              <h3><a href="#" data-toggle="tooltip" title="Read different articles from different sports at all one place"><dt>Sports</dt></a></h3>
+              
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <footer>
+  <p>Official Website <br>
+    <b style="font-style: italic">Sharehub</b><br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+    </body>
+ 
+</html>
